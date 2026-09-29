@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SENDENG</title>
+  <meta name="description" content="Moo Deng is Sender.family's new official mascot. Tiny hippo, big sends.">
+  <meta property="og:title" content="SENDENG">
+  <meta property="og:description" content="Moo Deng is Sender.family's new official mascot. Tiny hippo, big sends.">
+  <meta property="og:image" content="logo.png">
+  <link rel="icon" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="dust" aria-hidden="true"></canvas>
+  <div class="stage" aria-hidden="true">
+    <div class="curtains"></div>
+    <div class="spot spot-a"></div>
+    <div class="spot spot-b"></div>
+    <div class="spot spot-c"></div>
+    <span class="gem g1"></span>
+    <span class="gem g2"></span>
+    <span class="gem g3"></span>
+    <span class="gem g4"></span>
+    <span class="gem g5"></span>
+    <div class="vignette"></div>
+  </div>
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-panel left"></div>
+    <div class="intro-panel right"></div>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="#hero">
+      <img src="logo.png" alt="">
+      <span>SENDENG</span>
+    </a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#howtobuy">How to Buy</a>
+      <a href="#chart">Chart</a>
+      <a href="#joinus">Join</a>
+    </nav>
+    <a class="nav-x" href="https://x.com/SendengMeme" target="_blank" rel="noopener noreferrer">
+      <img src="icons/x.svg" alt="">
+      Follow
+    </a>
+  </header>
+
+  <main>
+    <section id="hero">
+      <p class="kicker">
+        <img src="icons/ethereum.svg" alt="">
+        Ethereum memecoin
+      </p>
+      <div class="portrait">
+        <div class="ring"></div>
+        <div class="ring ring-2"></div>
+        <img src="logo.png" alt="SENDENG mascot, a hippo in a neon helmet">
+        <div class="reflection"></div>
+      </div>
+      <h1 class="wordmark" data-text="SENDENG">SENDENG</h1>
+      <p class="tag">Tiny hippo. Big sends.</p>
+      <p class="lede">Moo Deng is Sender.family's new official mascot.</p>
+      <div class="actions">
+        <a class="btn solid" href="https://app.uniswap.org/swap?chain=ethereum" target="_blank" rel="noopener noreferrer">
+          <img src="icons/uniswap.svg" alt="">
+          Buy on Uniswap
+        </a>
+        <a class="btn ghost" href="https://dexscreener.com/ethereum" target="_blank" rel="noopener noreferrer">
+          <img src="icons/dexscreener.svg" alt="">
+          Dexscreener
+        </a>
+        <a class="btn ghost" href="https://x.com/SendengMeme" target="_blank" rel="noopener noreferrer">
+          <img src="icons/x.svg" alt="">
+          X
+        </a>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>SENDENG</span><span>Tiny hippo</span><span>Big sends</span><span>Ethereum</span><span>Sender.family</span><span>Moo Deng</span>
+        <span>SENDENG</span><span>Tiny hippo</span><span>Big sends</span><span>Ethereum</span><span>Sender.family</span><span>Moo Deng</span>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="about-copy" data-reveal>
+        <p class="eyebrow">About</p>
+        <h2>A velvet stage for a very small hippo.</h2>
+        <p>SENDENG is an Ethereum memecoin. The face of it is Moo Deng, Sender.family's new official mascot: a tiny hippo with a neon helmet, a diamond chain, and one job. Send.</p>
+        <p>The look is the curtain call. Purple velvet, cyan rim light, and a gem-cut name that sits on the stage like jewelry. Small mascot. Loud arrival.</p>
+      </div>
+      <aside class="facts" data-reveal>
+        <img class="facts-logo" src="logo.png" alt="">
+        <ul>
+          <li><span>Name</span><strong>SENDENG</strong></li>
+          <li><span>Symbol</span><strong>SENDENG</strong></li>
+          <li><span>Chain</span><strong><img src="icons/ethereum.svg" alt=""> Ethereum</strong></li>
+          <li><span>Mascot</span><strong>Moo Deng</strong></li>
+          <li><span>House</span><strong>Sender.family</strong></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="howtobuy">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">How to buy</p>
+        <h2>Four steps onto the stage.</h2>
+      </div>
+      <ol class="steps">
+        <li data-reveal>
+          <span class="num">01</span>
+          <h3>Open a wallet</h3>
+          <p>Use MetaMask or any wallet that speaks Ethereum. This is the door to the curtain.</p>
+        </li>
+        <li data-reveal>
+          <span class="num">02</span>
+          <h3>Hold some ETH</h3>
+          <p>SENDENG swaps against ether. Keep a little extra ETH for the network fee.</p>
+        </li>
+        <li data-reveal>
+          <span class="num">03</span>
+          <h3>Swap on Uniswap</h3>
+          <p>Open Uniswap on Ethereum, paste the contract from the official X post, and swap ETH for SENDENG.</p>
+          <a href="https://app.uniswap.org/swap?chain=ethereum" target="_blank" rel="noopener noreferrer">
+            <img src="icons/uniswap.svg" alt="">
+            Uniswap
+          </a>
+        </li>
+        <li data-reveal>
+          <span class="num">04</span>
+          <h3>Watch the chart</h3>
+          <p>The live book sits on Dexscreener. Follow the pair on Ethereum after the pool opens.</p>
+          <a href="https://dexscreener.com/ethereum" target="_blank" rel="noopener noreferrer">
+            <img src="icons/dexscreener.svg" alt="">
+            Dexscreener
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <section id="chart">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Chart</p>
+        <h2>Ethereum, live on Dexscreener.</h2>
+      </div>
+      <div class="chart-frame" data-reveal>
+        <iframe
+          src="https://dexscreener.com/ethereum?embed=1&theme=dark&info=0"
+          title="Dexscreener Ethereum chart"
+          loading="lazy"
+        ></iframe>
+      </div>
+      <a class="chart-link" href="https://dexscreener.com/ethereum" target="_blank" rel="noopener noreferrer">
+        <img src="icons/dexscreener.svg" alt="">
+        Open the Ethereum chart
+      </a>
+    </section>
+
+    <section id="joinus">
+      <div class="section-head" data-reveal>
+        <p class="eyebrow">Join us</p>
+        <h2>The curtain stays open.</h2>
+        <p class="sub">Follow the official send. Contract, pool, and every drop land on X first.</p>
+      </div>
+      <figure class="banner" data-reveal>
+        <img src="banner.png" alt="SENDENG banner with the hippo mascot and gem lettering">
+      </figure>
+      <a class="join-card" href="https://x.com/SendengMeme" target="_blank" rel="noopener noreferrer" data-reveal>
+        <img src="icons/x.svg" alt="">
+        <div>
+          <strong>@SendengMeme</strong>
+          <span>Tiny hippo. Big sends.</span>
+        </div>
+        <em>Follow</em>
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <img src="logo.png" alt="">
+    <p>SENDENG on Ethereum. Moo Deng is Sender.family's new official mascot.</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
