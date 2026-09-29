@@ -289,6 +289,46 @@ button, a { -webkit-tap-highlight-color: transparent; }
   max-width: 460px;
   font-weight: 300;
 }
+.ca {
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  max-width: min(760px, 92vw);
+  padding: 10px 12px 10px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(10, 4, 22, 0.62);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+.ca span {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: var(--cyan);
+  flex: none;
+}
+.ca code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  color: var(--lilac);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ca em {
+  font-style: normal;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: white;
+  flex: none;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(168, 85, 247, 0.45);
+}
+.ca.copied em { background: rgba(34, 211, 238, 0.35); }
 .actions {
   display: flex;
   flex-wrap: wrap;
@@ -408,6 +448,14 @@ h2 {
   font-size: 14px;
 }
 .facts li span { color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; font-size: 11px; }
+.facts li.ca-row { flex-direction: column; align-items: flex-start; gap: 6px; }
+.facts li.ca-row strong {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 12px;
+  font-weight: 500;
+  word-break: break-all;
+  color: var(--lilac);
+}
 .facts strong { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; }
 .facts strong img { width: 18px; height: 18px; border-radius: 50%; }
 

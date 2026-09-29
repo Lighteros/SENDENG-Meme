@@ -79,3 +79,27 @@ const reveal = new IntersectionObserver(
   { threshold: 0.18 }
 );
 document.querySelectorAll("[data-reveal]").forEach((node) => reveal.observe(node));
+
+const caButton = document.querySelector(".ca");
+if (caButton) {
+  caButton.addEventListener("click", async () => {
+    const address = caButton.getAttribute("data-ca");
+    try {
+      await navigator.clipboard.writeText(address);
+    } catch (error) {
+      const field = document.createElement("textarea");
+      field.value = address;
+      document.body.appendChild(field);
+      field.select();
+      document.execCommand("copy");
+      field.remove();
+    }
+    const label = caButton.querySelector("em");
+    label.textContent = "Copied";
+    caButton.classList.add("copied");
+    window.setTimeout(() => {
+      label.textContent = "Copy";
+      caButton.classList.remove("copied");
+    }, 1600);
+  });
+}
